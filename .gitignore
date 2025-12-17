@@ -1,66 +1,32 @@
 #################
 ## Vacuum-IM
 #################
-*.dll
-*.exe
-/VacuumIM/
 /plugins/*
 /src/libs/*
 gitinfo.h
-vacuum
 vacuum.vc.*
 autotranslate
 txprepare
 
+#################
+## Binary/build
+#################
+*.dll
+*.exe
+/VacuumIM/
+vacuum
 
-#################
-## Qt
-#################
-*.qm
-*.moc
-ui_*.h
-moc_*.cpp
-
-
-#################
-## QMake
-#################
+# QMake
 Makefile
 Makefile.Debug
 Makefile.Release
 .qmake.stash
 
-
-#################
-## GCC
-#################
+# GCC
 *.[oa]
-
-
-#################
-## Qt Creator
-#################
-*.pro.user
-*.pro.user.*
-
-
-#################
-## Visual Studio
-#################
-
-# Solutions
-*.sln
-*.vcxproj
-*.vcxproj.filters
-
-# User-specific files
-*.suo
-*.user
-*.sln.docstates
 
 # Build results
 *.exp
-
 [Dd]ebug/
 [Rr]elease/
 x64/
@@ -71,7 +37,6 @@ build/
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
-
 *_i.c
 *_p.c
 *.ilk
@@ -98,6 +63,39 @@ build/
 *.embed.manifest
 *_manifest.rc
 *_manifest.res
+
+
+#################
+## Qt
+#################
+*.qm
+*.moc
+ui_*.h
+moc_*.cpp
+
+
+#################
+## Qt Creator
+#################
+*.pro.user
+*.pro.user.*
+
+
+#################
+## Visual Studio
+#################
+# VSCode
+.vscode
+
+# Solutions
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
 
 # Visual C++ cache files
 ipch/
@@ -187,27 +185,66 @@ UpgradeLog*.htm
 App_Data/*.mdf
 App_Data/*.ldf
 
+# Not sure
+.vs
+CMakeSettings.json
+
 
 #############
-## Windows detritus
+## macOS garbage
 #############
 
-# Windows image file caches
+# General
+.DS_Store
+__MACOSX/
+.AppleDouble
+.LSOverride
+Icon[]
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+#############
+## Windows garbage
+#############
+
+# Windows thumbnail cache files
 Thumbs.db
+Thumbs.db:encryptable
 ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
 
 # Folder config file
-Desktop.ini
+[Dd]esktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-# Mac crap
-.DS_Store
-!/src/packages/macosx/DS_Store
-*.xcodeproj
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
 
-# Microsoft Visual Code and Studio 2017
-.vscode
-.vs
-CMakeSettings.json
+# Windows shortcuts
+*.lnk
