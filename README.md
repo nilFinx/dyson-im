@@ -1,6 +1,6 @@
 # Vacuum-IM
 
-Fully-featured crossplatform Jabber/XMPP client.
+Fully-featured crossplatform XMPP (formerly Jabber) client.
 
 The core program is just a plugin loader, all functionality is made available via plugins. This enforces modularity and ensures well defined component interaction via interfaces.
 
@@ -12,7 +12,7 @@ Jabber conference (FOR ORIGINAL PROJECT - NOT THIS): [vacuum@conference.jabber.r
 * Nested roster groups
 * Multiple accounts in profile
 * Support for Adium message styles
-* Full support for Jabber conferences
+* XMPP conferences (XEP-0045)
 * Easy access to recent contacts and conferences
 * Ability to combine contact to meta-contact from several accounts
 * Storage of history both locally and on the server (XEP-136)
