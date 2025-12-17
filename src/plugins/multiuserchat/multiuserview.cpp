@@ -551,14 +551,14 @@ bool MultiUserView::event(QEvent *AEvent)
 					if (key == RTTO_AVATAR_IMAGE)
 						avatar.append(toolTipsMap.value(key));
 					else if (key < RTTO_MAXIMUM)
-							text.append("<nobr>").append(toolTipsMap.value(key)).append("</nobr><p/><nbsp>");
+						text.append("<nobr>").append(toolTipsMap.value(key)).append("</nobr><p/><nbsp>");
 					else if (key == RTTO_MAXIMUM)
 						continue;
 				}
 				if (text.endsWith("<p/><nbsp>"))
 					text.chop(10);
 				QString tooltip;
-				tooltip.append("<table style='white-space:pre' cellspacing=6><tr><td>").append(text);
+				tooltip.append("<table style='white-space:pre' cellspacing=60><tr><td>").append(text);
 				tooltip.append("</td><td style='text-align:right'>").append(avatar);
 				tooltip.append("</td></tr></table>");
 				QToolTip::showText(helpEvent->globalPos(),tooltip,this);
