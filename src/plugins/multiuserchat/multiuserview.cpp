@@ -558,7 +558,7 @@ bool MultiUserView::event(QEvent *AEvent)
 				if (text.endsWith("<p/><nbsp>"))
 					text.chop(10);
 				QString tooltip;
-				tooltip.append("<table style='white-space:pre' cellspacing=60><tr><td>").append(text);
+				tooltip.append("<table style='white-space:pre' cellspacing=6><tr><td>").append(text);
 				tooltip.append("</td><td style='text-align:right'>").append(avatar);
 				tooltip.append("</td></tr></table>");
 				QToolTip::showText(helpEvent->globalPos(),tooltip,this);
